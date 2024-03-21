@@ -1,7 +1,7 @@
 body {
-  font-family: "Roboto", "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
-  background-color: ffffff;
+  background-color: #ffffff;
   color: #434455;
   line-height: 1.5;
 }
@@ -28,8 +28,10 @@ ul {
   color: #2e2f42;
   text-transform: uppercase;
 }
-.heder-title {
+.header {
   background-color: #2e2f42;
+}
+.heder-title {
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
@@ -51,6 +53,9 @@ nav :focus {
   letter-spacing: 0.02em;
   text-align: left;
 }
+.adress {
+  font-style: normal;
+}
 address :hover {
   color: #404bbf;
 }
@@ -67,10 +72,10 @@ address :focus {
 }
 
 button :hover {
-  color: #404bbf;
+  background-color: #404bbf;
 }
 button :focus {
-  color: #404bbf;
+  background-color: #404bbf;
 }
 .put {
   cursor: pointer;
@@ -86,6 +91,9 @@ button :focus {
 .team-photo {
   background-color: #f4f4fd;
 }
+.images-team {
+  background-color: #ffffff;
+}
 .title-section {
   color: #2e2f42;
   font-size: 36px;
@@ -93,6 +101,7 @@ button :focus {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
+  text-transform: capitalize;
 }
 .section-name {
   color: #2e2f42;
