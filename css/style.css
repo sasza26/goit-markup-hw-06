@@ -5,9 +5,11 @@ body {
   color: #434455;
   line-height: 1.5;
 }
+
 ul {
   list-style-type: none;
 }
+
 .web {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -18,6 +20,7 @@ ul {
   color: #4d5ae5;
   text-transform: uppercase;
 }
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -28,9 +31,11 @@ ul {
   color: #2e2f42;
   text-transform: uppercase;
 }
+
 .header {
   background-color: #2e2f42;
 }
+
 .heder-title {
   font-size: 56px;
   font-weight: 700;
@@ -39,12 +44,12 @@ ul {
   text-align: center;
   color: #ffffff;
 }
-nav :hover {
+
+nav :hover,
+:focus {
   color: #404bbf;
 }
-nav :focus {
-  color: #404bbf;
-}
+
 .link {
   color: #2e2f42;
   font-size: 16px;
@@ -53,15 +58,16 @@ nav :focus {
   letter-spacing: 0.02em;
   text-align: left;
 }
+
 .adress {
   font-style: normal;
 }
-address :hover {
+
+address :hover,
+:focus {
   color: #404bbf;
 }
-address :focus {
-  color: #404bbf;
-}
+
 .contacts {
   font-size: 16px;
   font-weight: 400;
@@ -70,7 +76,8 @@ address :focus {
   text-align: left;
   color: #434455;
 }
-.put {
+
+.button {
   cursor: pointer;
   background-color: #4d5ae5;
   color: #ffffff;
@@ -81,6 +88,7 @@ address :focus {
   letter-spacing: 0.04em;
   text-align: left;
 }
+
 button :hover,
 :focus {
   background-color: #404bbf;
@@ -89,9 +97,11 @@ button :hover,
 .team-photo {
   background-color: #f4f4fd;
 }
+
 .images-team {
   background-color: #ffffff;
 }
+
 .title-section {
   color: #2e2f42;
   font-size: 36px;
@@ -101,6 +111,7 @@ button :hover,
   text-align: center;
   text-transform: capitalize;
 }
+
 .section-name {
   color: #2e2f42;
 
@@ -110,6 +121,7 @@ button :hover,
   letter-spacing: 0.02em;
   text-align: left;
 }
+
 .text {
   color: #434455;
   font-size: 16px;
@@ -118,15 +130,16 @@ button :hover,
   letter-spacing: 0.02em;
   text-align: left;
 }
+
 .team-name {
   color: #2e2f42;
-
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: left;
 }
+
 .profession {
   color: #434455;
   font-size: 16px;
@@ -135,31 +148,34 @@ button :hover,
   letter-spacing: 0.02em;
   text-align: left;
 }
+
 .title-section-portfolio {
   color: #2e2f42;
   font-size: 36px;
-
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
 }
+
 .portfolio-title {
   color: #2e2f42;
-
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: left;
 }
+
 .footer {
   background-color: #2e2f42;
 }
+
 .logo-footer {
   font-family: "Raleway", sans-serif;
   color: #f4f4fd;
 }
+
 .footer-text {
   color: #f4f4fd;
   font-size: 16px;
