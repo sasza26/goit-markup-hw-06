@@ -70,13 +70,6 @@ address :focus {
   text-align: left;
   color: #434455;
 }
-
-button :hover {
-  background-color: #404bbf;
-}
-button :focus {
-  background-color: #404bbf;
-}
 .put {
   cursor: pointer;
   background-color: #4d5ae5;
@@ -88,6 +81,11 @@ button :focus {
   letter-spacing: 0.04em;
   text-align: left;
 }
+button :hover,
+:focus {
+  background-color: #404bbf;
+}
+
 .team-photo {
   background-color: #f4f4fd;
 }
