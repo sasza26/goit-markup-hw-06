@@ -45,8 +45,10 @@ ul {
   color: #ffffff;
 }
 
-nav :hover,
-:focus {
+nav :hover {
+  color: #404bbf;
+}
+nav :focus {
   color: #404bbf;
 }
 
@@ -59,12 +61,14 @@ nav :hover,
   text-align: left;
 }
 
-.adress {
+.contacts-all {
   font-style: normal;
 }
 
-address :hover,
-:focus {
+address :hover {
+  color: #404bbf;
+}
+address :focus {
   color: #404bbf;
 }
 
@@ -77,7 +81,7 @@ address :hover,
   color: #434455;
 }
 
-.button {
+.button-one {
   cursor: pointer;
   background-color: #4d5ae5;
   color: #ffffff;
@@ -89,8 +93,10 @@ address :hover,
   text-align: left;
 }
 
-button :hover,
-:focus {
+button :hover {
+  background-color: #404bbf;
+}
+button :focus {
   background-color: #404bbf;
 }
 
