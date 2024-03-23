@@ -65,9 +65,7 @@ nav :focus {
   font-style: normal;
 }
 
-address :hover {
-  color: #404bbf;
-}
+address :hover ,
 address :focus {
   color: #404bbf;
 }
@@ -93,10 +91,8 @@ address :focus {
   text-align: left;
 }
 
-button :hover {
-  background-color: #404bbf;
-}
-button :focus {
+button:hover ,
+button:focus {
   background-color: #404bbf;
 }
 
