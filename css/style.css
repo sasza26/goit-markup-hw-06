@@ -9,6 +9,9 @@ body {
 ul {
   list-style-type: none;
 }
+a {
+  text-decoration: none;
+}
 
 .web {
   font-family: "Raleway", sans-serif;
@@ -65,7 +68,7 @@ nav :focus {
   font-style: normal;
 }
 
-address :hover ,
+address :hover,
 address :focus {
   color: #404bbf;
 }
@@ -91,7 +94,7 @@ address :focus {
   text-align: left;
 }
 
-button:hover ,
+button:hover,
 button:focus {
   background-color: #404bbf;
 }
