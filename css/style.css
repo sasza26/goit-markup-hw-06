@@ -13,6 +13,49 @@ a {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header-container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.section {
+  padding: 120px 0;
+}
+
+.header-one {
+  border-bottom: 1px solid;
+  display: flex;
+  color: #404bbf;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
 .web {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -22,6 +65,8 @@ a {
   text-align: left;
   color: #4d5ae5;
   text-transform: uppercase;
+  display: inline;
+  margin-right: 76px;
 }
 
 .logo {
@@ -46,6 +91,9 @@ a {
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
+
+  max-width: 496px;
+  margin: 0 auto 48px;
 }
 
 nav :hover {
@@ -66,6 +114,7 @@ nav :focus {
 
 .contacts-all {
   font-style: normal;
+  margin-left: auto;
 }
 
 address :hover,
@@ -80,6 +129,9 @@ address :focus {
   letter-spacing: 0.02em;
   text-align: left;
   color: #434455;
+  display: inline;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .button-one {
@@ -92,6 +144,12 @@ address :focus {
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: left;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 32px;
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
 }
 
 button:hover,
@@ -117,6 +175,13 @@ button:focus {
   text-transform: capitalize;
 }
 
+.section-box {
+  display: inline-block;
+  padding: 10px;
+  max-width: 264px;
+  margin-top: 40px;
+}
+
 .section-name {
   color: #2e2f42;
 
@@ -134,6 +199,13 @@ button:focus {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: left;
+}
+
+.images-team {
+  display: inline-block;
+  gap: 24px;
+  max-width: 264px;
+  padding: 10px;
 }
 
 .team-name {
@@ -170,6 +242,13 @@ button:focus {
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: left;
+}
+
+.portfolio-box {
+  display: inline-block;
+
+  max-width: 360px;
+  padding: 15px;
 }
 
 .footer {
