@@ -140,6 +140,10 @@ address :hover,
 address :focus {
   color: #404bbf;
 }
+.link-address {
+  display: flex;
+  margin: 0 auto;
+}
 
 .header {
   background-color: #2e2f42;
@@ -300,7 +304,7 @@ button:focus {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  text-align: center;
+  text-align: left;
   margin-bottom: 8px;
 }
 
@@ -311,9 +315,11 @@ button:focus {
   padding: 32px 16px;
 }
 .text {
-  text-align: center;
+  text-align: left;
 }
-
+.port-lio-list {
+  padding: 32px 16px;
+}
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
@@ -322,6 +328,8 @@ button:focus {
 .logo-footer {
   font-family: "Raleway", sans-serif;
   color: #f4f4fd;
+}
+.logo-web-footer {
   margin-bottom: 16px;
 }
 
