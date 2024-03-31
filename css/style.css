@@ -37,22 +37,31 @@ img {
   padding: 0 15px;
 }
 
-.section {
-  padding: 120px 0;
+.section-one {
+  padding: 188px 0;
 }
 
 .header-one {
   border-bottom: 1px solid;
   display: flex;
-  color: #404bbf;
+  color: #e7e9fc;
 }
 .header-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
   max-width: 1440px;
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15 0 15;
 }
-
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+.logo-web {
+  margin-right: 76px;
+}
 .web {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -118,8 +127,6 @@ nav :focus {
 
 .contacts-all {
   display: flex;
-  font-style: normal;
-  margin-left: auto;
   gap: 40px;
 }
 
@@ -128,14 +135,25 @@ address :focus {
   color: #404bbf;
 }
 
-.contacts {
+.contacts-mail {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-right: 40px;
+  color: #434455;
+  align-items: stretch;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.contacts-tel {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: right;
   color: #434455;
-  align-items: stretch;
+  margin-right: 0;
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -156,11 +174,15 @@ address :focus {
   display: block;
   margin: 0 auto;
   min-width: 169px;
+  height: 56px;
 }
 
 button:hover,
 button:focus {
   background-color: #404bbf;
+}
+.section-two {
+  padding: 120px 0;
 }
 
 .team-photo {
@@ -169,9 +191,11 @@ button:focus {
 
 .images-team {
   background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
 }
 
-.title-section {
+.visually-hidden {
+  visibility: hidden;
   color: #2e2f42;
   font-size: 36px;
   font-weight: 700;
@@ -180,22 +204,25 @@ button:focus {
   text-align: center;
   text-transform: capitalize;
 }
-
+.section-box-content {
+  display: flex;
+  gap: 24px;
+}
 .section-box {
-  display: inline-block;
   padding: 10px;
   max-width: 264px;
-  margin-top: 40px;
+  gap: 24px;
 }
 
 .section-name {
   color: #2e2f42;
-
+  align-items: center;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  text-align: left;
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .text {
@@ -206,21 +233,35 @@ button:focus {
   letter-spacing: 0.02em;
   text-align: left;
 }
-
+.title-section {
+  color: #2e2f42;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+.list-img {
+  display: flex;
+  gap: 24px;
+}
 .images-team {
   display: inline-block;
   gap: 24px;
   max-width: 264px;
   padding: 10px;
 }
-
+.name-prof {
+  padding: 32px 0;
+  text-align: center;
+}
 .team-name {
   color: #2e2f42;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  text-align: left;
 }
 
 .profession {
@@ -229,7 +270,6 @@ button:focus {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-align: left;
 }
 
 .title-section-portfolio {
@@ -259,11 +299,13 @@ button:focus {
 
 .footer {
   background-color: #2e2f42;
+  padding: 100px 0;
 }
 
 .logo-footer {
   font-family: "Raleway", sans-serif;
   color: #f4f4fd;
+  margin-bottom:16px;
 }
 
 .footer-text {
@@ -273,4 +315,5 @@ button:focus {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: left;
+  max-width: 264px;
 }
