@@ -46,7 +46,7 @@ ul {
 }
 
 .header-one {
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #e7e9fc;
   display: flex;
   color: #e7e9fc;
 }
@@ -100,6 +100,7 @@ nav :focus {
   display: flex;
   gap: 40px;
   margin-right: 332px;
+  align-items: center;
 }
 
 .link {
@@ -115,7 +116,7 @@ nav :focus {
 .contacts-all {
   display: flex;
   gap: 40px;
-  margin-right: 300px;
+  margin-right: 0px;
 }
 
 .contacts-mail {
@@ -280,6 +281,7 @@ button:focus {
 .section-four {
   padding-top: 120px;
   padding-bottom: 120px;
+  border: 1px solid #e7e9fc;
 }
 .portfolio-list {
   display: flex;
