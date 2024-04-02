@@ -206,7 +206,7 @@ button:focus {
 }
 .section-box {
   padding: 10px;
-  max-width: 264px;
+  width: calc((100% - 72px) / 4);
   gap: 24px;
 }
 
@@ -248,7 +248,7 @@ button:focus {
   letter-spacing: 0.02em;
   text-align: center;
   text-transform: capitalize;
-  margin-bottom: 8px;
+  margin-bottom: 72px;
 }
 .list-img {
   display: flex;
@@ -257,7 +257,7 @@ button:focus {
 .images-team {
   display: inline-block;
   gap: 24px;
-  max-width: 264px;
+  width: calc((100% - 72px) / 4);
 }
 .name-prof {
   padding: 32px 0;
@@ -269,6 +269,7 @@ button:focus {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .profession {
@@ -278,6 +279,7 @@ button:focus {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
 .section-four {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -313,7 +315,7 @@ button:focus {
 .portfolio-box {
   border: 1px solid #e7e9fc;
   border-top: none;
-  max-width: 360px;
+  width: calc((100% - 48px) / 3);
   padding: 32px 16px;
 }
 .text {
@@ -332,7 +334,9 @@ button:focus {
   color: #f4f4fd;
 }
 .logo-web-footer {
+  display: inline-block;
   margin-bottom: 16px;
+  margin-left: 156px;
 }
 
 .footer-text {
@@ -343,4 +347,5 @@ button:focus {
   letter-spacing: 0.02em;
   text-align: left;
   max-width: 264px;
+  margin-left: 156px;
 }
