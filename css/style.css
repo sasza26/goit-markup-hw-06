@@ -41,7 +41,7 @@ ul {
   padding: 0 15px;
 }
 
-.section-one {
+.header {
   padding: 188px 0;
 }
 
@@ -50,6 +50,7 @@ ul {
   display: flex;
   color: #e7e9fc;
 }
+
 .header-container {
   display: flex;
   justify-content: space-around;
@@ -59,13 +60,16 @@ ul {
   margin: 0 auto;
   padding: 0 15 0 15;
 }
+
 .logo-link {
   display: flex;
   align-items: center;
 }
+
 .logo-web {
   margin-right: 76px;
 }
+
 .web {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -93,9 +97,11 @@ ul {
 nav :hover {
   color: #404bbf;
 }
+
 nav :focus {
   color: #404bbf;
 }
+
 .link-item {
   display: flex;
   gap: 40px;
@@ -128,6 +134,7 @@ nav :focus {
   gap: 40px;
   padding-top: 24px;
 }
+
 .contacts-tel {
   font-size: 16px;
   font-weight: 400;
@@ -137,10 +144,12 @@ nav :focus {
   gap: 40px;
   padding-top: 24px;
 }
+
 address :hover,
 address :focus {
   color: #404bbf;
 }
+
 .link-address {
   display: flex;
   margin: 0 auto;
@@ -186,6 +195,7 @@ button:hover,
 button:focus {
   background-color: #404bbf;
 }
+
 .section-two {
   padding: 120px 0;
 }
@@ -200,10 +210,12 @@ button:focus {
   text-align: center;
   text-transform: capitalize;
 }
+
 .section-box-content {
   display: flex;
   gap: 24px;
 }
+
 .section-box {
   padding: 10px;
   width: calc((100% - 72px) / 4);
@@ -229,6 +241,7 @@ button:focus {
   letter-spacing: 0.02em;
   text-align: left;
 }
+
 .team-photo {
   background-color: #f4f4fd;
 }
@@ -237,10 +250,12 @@ button:focus {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
 }
+
 .section-three {
   padding: 120px 0;
   background-color: #f4f4fd;
 }
+
 .title-section {
   color: #2e2f42;
   font-size: 36px;
@@ -250,19 +265,23 @@ button:focus {
   text-transform: capitalize;
   margin-bottom: 72px;
 }
+
 .list-img {
   display: flex;
   gap: 24px;
 }
+
 .images-team {
   display: inline-block;
   gap: 24px;
   width: calc((100% - 72px) / 4);
 }
+
 .name-prof {
   padding: 32px 0;
   text-align: center;
 }
+
 .team-name {
   color: #2e2f42;
   font-size: 20px;
@@ -285,6 +304,7 @@ button:focus {
   padding-bottom: 120px;
   border: 1px solid #e7e9fc;
 }
+
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -318,12 +338,14 @@ button:focus {
   width: calc((100% - 48px) / 3);
   padding: 32px 16px;
 }
+
 .text {
   text-align: left;
 }
 .port-lio-list {
   padding: 32px 16px;
 }
+
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
@@ -333,6 +355,7 @@ button:focus {
   font-family: "Raleway", sans-serif;
   color: #f4f4fd;
 }
+
 .logo-web-footer {
   display: inline-block;
   margin-bottom: 16px;
