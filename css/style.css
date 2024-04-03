@@ -45,16 +45,6 @@ ul {
   border-bottom: 1px solid #e7e9fc;
 }
 
-.header-container {
-  display: flex;
-  
-  align-items: center;
-  
-  width: 1158px;
-  margin: 0 auto;
-  padding: 0 15 0 15;
-}
-
 .logo-link {
   display: flex;
   align-items: center;
