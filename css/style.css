@@ -41,10 +41,6 @@ ul {
   padding: 0 15px;
 }
 
-.header {
-  padding: 188px 0;
-}
-
 .header-one {
   border-bottom: 1px solid #e7e9fc;
   display: flex;
@@ -66,10 +62,6 @@ ul {
   align-items: center;
 }
 
-.logo-web {
-  margin-right: 76px;
-}
-
 .web {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -80,6 +72,7 @@ ul {
   color: #4d5ae5;
   text-transform: uppercase;
   display: inline-block;
+  margin-right: 76px;
 }
 
 .logo {
@@ -120,13 +113,24 @@ nav :focus {
 }
 
 .contacts-all {
+  display: flex;
+  gap: 40px;
+}
+
+.mail {
   color: #2e2f42;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  display: flex;
-  gap: 40px;
+}
+
+.tel {
+  color: #2e2f42;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   margin-right: 0;
 }
 
@@ -350,6 +354,7 @@ button:focus {
   color: #4d5ae5;
   text-transform: uppercase;
   display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-text {
