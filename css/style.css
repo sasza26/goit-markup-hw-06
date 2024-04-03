@@ -110,7 +110,7 @@ nav :focus {
   padding-bottom: 24px;
 }
 
-.contacts-all {
+.contacts {
   display: flex;
   gap: 40px;
 }
