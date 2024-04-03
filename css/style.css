@@ -100,25 +100,23 @@ nav :focus {
   padding-top: 24px;
   padding-bottom: 24px;
 }
-
-.contacts {
+.our-contacts {
   display: flex;
   gap: 40px;
 }
 
-.mail {
+.cont {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+
+.mail {
   color: #2e2f42;
 }
 
 .tel {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   color: #2e2f42;
   margin-right: 0;
 }
