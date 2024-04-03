@@ -105,7 +105,7 @@ nav :focus {
 .link-item {
   display: flex;
   gap: 40px;
-  margin-right: 332px;
+  margin-right: 300px;
   align-items: center;
 }
 
@@ -120,39 +120,19 @@ nav :focus {
 }
 
 .contacts-all {
+  color: #2e2f42;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   display: flex;
   gap: 40px;
-  margin-right: 0px;
-}
-
-.contacts-mail {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-  gap: 40px;
-  padding-top: 24px;
-}
-
-.contacts-tel {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-  gap: 40px;
-  padding-top: 24px;
+  margin-right: 0;
 }
 
 address :hover,
 address :focus {
   color: #404bbf;
-}
-
-.link-address {
-  display: flex;
-  margin: 0 auto;
 }
 
 .header {
@@ -335,7 +315,6 @@ button:focus {
 }
 
 .portfolio-box {
-  border-top: none;
   width: calc((100% - 48px) / 3);
   padding: 32px 16px;
 }
@@ -345,6 +324,8 @@ button:focus {
 }
 .port-lio-list {
   padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .footer {
@@ -355,12 +336,20 @@ button:focus {
 .logo-footer {
   font-family: "Raleway", sans-serif;
   color: #f4f4fd;
-}
-
-.logo-web-footer {
   display: inline-block;
   margin-bottom: 16px;
+  margin-left: 0;
+}
+.web-footer {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
   margin-left: 156px;
+  color: #4d5ae5;
+  text-transform: uppercase;
+  display: inline-block;
 }
 
 .footer-text {
