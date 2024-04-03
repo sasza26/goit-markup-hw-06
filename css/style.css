@@ -47,9 +47,9 @@ ul {
 
 .header-container {
   display: flex;
-  justify-content: space-around;
+  
   align-items: center;
-  max-width: 1440px;
+  
   width: 1158px;
   margin: 0 auto;
   padding: 0 15 0 15;
