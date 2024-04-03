@@ -45,6 +45,9 @@ ul {
   display: flex;
   border-bottom: 1px solid #e7e9fc;
 }
+.hed-cont {
+  display: flex;
+}
 
 .logo-link {
   display: flex;
@@ -105,18 +108,19 @@ nav :focus {
   gap: 40px;
 }
 
-.cont {
+.mail {
+  color: #2e2f42;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
-.mail {
-  color: #2e2f42;
-}
-
 .tel {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   color: #2e2f42;
   margin-right: 0;
 }
