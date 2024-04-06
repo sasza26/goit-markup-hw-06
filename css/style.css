@@ -191,6 +191,7 @@ button:focus {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 .section-box-content {
   display: flex;
   gap: 24px;
@@ -199,7 +200,13 @@ button:focus {
 .section-box {
   width: calc((100% - 72px) / 4);
 }
-
+.icon {
+  border: 1px solid #2e2f42;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  background: #e7e9fc;
+}
 .section-name {
   color: #2e2f42;
 
@@ -228,6 +235,23 @@ button:focus {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   width: calc((100% - 72px) / 4);
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.soc-media-icons {
+  display: flex;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  padding: 10px;
+}
+.social-ikons {
+  color: aqua;
 }
 
 .section-three {
