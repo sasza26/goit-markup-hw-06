@@ -47,6 +47,8 @@ ul {
 .hed-container {
   display: flex;
   align-items: center;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .logo-link {
@@ -103,6 +105,8 @@ nav :focus {
   letter-spacing: 0.02em;
   display: block;
   padding: 24px 0;
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our-contacts {
   display: flex;
@@ -117,6 +121,7 @@ nav :focus {
   line-height: 1.5;
   letter-spacing: 0.02em;
   padding: 24px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tel {
@@ -127,6 +132,7 @@ nav :focus {
   color: #2e2f42;
   padding: 24px 0;
   margin-right: 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 address :hover,
@@ -137,6 +143,15 @@ address :focus {
 .header {
   background-color: #2e2f42;
   padding: 188px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/img-name.jpeg);
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .heder-title {
@@ -168,6 +183,7 @@ address :focus {
   margin: 0 auto;
   min-width: 169px;
   height: 56px;
+  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 button:hover,
@@ -201,11 +217,15 @@ button:focus {
   width: calc((100% - 72px) / 4);
 }
 .icon {
-  border: 1px solid #2e2f42;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+  border: 1px solid #8e8f99;
   border-radius: 4px;
   width: 264px;
   height: 112px;
-  background: #e7e9fc;
+  background-color: #f4f4fd;
 }
 .section-name {
   color: #2e2f42;
@@ -235,23 +255,35 @@ button:focus {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   width: calc((100% - 72px) / 4);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .social-media {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  gap: 16px;
 }
 .soc-media-icons {
-  display: flex;
-  background-color: #4d5ae5;
-  border-radius: 50%;
   width: 40px;
   height: 40px;
-  justify-content: center;
-  padding: 10px;
 }
-.social-ikons {
-  color: aqua;
+.soc-media-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.soc-media-link :focus,
+.soc-media-link :hover {
+  background-color: #31d0aa;
+}
+
+.social-icons {
+  fill: #f4f4fd;
 }
 
 .section-three {
@@ -329,23 +361,51 @@ button:focus {
   text-align: left;
   margin-bottom: 8px;
 }
-
+.portfolio-box :hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .portfolio-box {
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
 }
 
 .text {
   text-align: left;
 }
+.portfolio-box :hover .hover-text {
+  transform: translateY(0%);
+}
+
+.hover-text {
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .port-lio-list {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
+  display: flex;
+  align-items: baseline;
+  margin-right: 120px;
 }
 
 .logo-footer {
@@ -372,4 +432,17 @@ button:focus {
   letter-spacing: 0.02em;
   text-align: left;
   max-width: 264px;
+}
+.footer-text-social {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.footer-social {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding-left: 540px;
 }
