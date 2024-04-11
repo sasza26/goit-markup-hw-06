@@ -191,6 +191,7 @@ button:hover,
 button:focus {
   background-color: #404bbf;
 }
+
 /* section 2 */
 
 .section-two {
@@ -218,6 +219,7 @@ button:focus {
 .section-box {
   width: calc((100% - 72px) / 4);
 }
+
 .icon {
   display: flex;
   align-items: center;
@@ -229,6 +231,7 @@ button:focus {
   height: 112px;
   background-color: #f4f4fd;
 }
+
 .section-name {
   color: #2e2f42;
 
@@ -249,9 +252,7 @@ button:focus {
   text-align: left;
 }
 
-.team-photo {
-  background-color: #f4f4fd;
-}
+/* section3 */
 
 .images-team {
   background-color: #ffffff;
@@ -270,7 +271,6 @@ button:focus {
 .soc-media-icons {
   width: 40px;
   height: 40px;
-  gap: 24px;
 }
 
 .soc-media-link {
@@ -292,7 +292,6 @@ button:focus {
   fill: #f4f4fd;
   gap: 24px;
 }
-/* section 3 */
 
 .section-three {
   padding: 120px 0;
@@ -390,7 +389,7 @@ button:focus {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  box-shadow: #404bbf;
+
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -398,6 +397,8 @@ button:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
+/* footer */
 
 .footer {
   background-color: #2e2f42;
