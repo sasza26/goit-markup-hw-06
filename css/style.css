@@ -98,7 +98,7 @@ nav :focus {
 }
 
 .link {
-  color: #404bbf;
+  color: #2e2f42;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -109,7 +109,18 @@ nav :focus {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link::after {
+.link-studio {
+  color: #2e2f42;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  display: block;
+  padding: 24px 0;
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-studio::after {
   content: "";
   width: 100%;
   position: absolute;
@@ -128,7 +139,7 @@ nav :focus {
 .contacts {
   color: #2e2f42;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
   padding: 24px 0;
@@ -143,6 +154,7 @@ address :focus {
 .header {
   background-color: #2e2f42;
   padding: 188px 0;
+  display: block;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -152,6 +164,7 @@ address :focus {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin: auto;
 }
 
 .heder-title {
@@ -254,6 +267,16 @@ button:focus {
 
 /* section3 */
 
+.title-section {
+  margin-bottom: 72px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 111%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--navy-blue);
+}
+
 .images-team {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
@@ -283,6 +306,7 @@ button:focus {
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .soc-media-link:focus,
 .soc-media-link:hover {
   background-color: #404bbf;
@@ -290,7 +314,6 @@ button:focus {
 
 .social-ikons {
   fill: #f4f4fd;
-  
 }
 
 .section-three {
@@ -333,9 +356,20 @@ button:focus {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 /* section 4 */
+
+.title-section-portfolio {
+  margin-bottom: 72px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 111%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--navy-blue);
+}
 
 .section-four {
   padding-top: 120px;
@@ -353,8 +387,7 @@ button:focus {
 
 .portfolio-box {
   width: calc((100% - 48px) / 3);
-  transition: box-shadow 
-   250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .text {
@@ -410,8 +443,6 @@ button:focus {
 .footer-content {
   display: flex;
   align-items: baseline;
-  width: 1158px;
-  margin-left: 370px;
 }
 
 /* div logo+paragraf */
