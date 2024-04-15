@@ -583,5 +583,5 @@ button:focus {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: var(--iris);
   margin-top: 50px;
-  margin-left: 100px;
+  margin-left: 25%;
 }
