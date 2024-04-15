@@ -511,3 +511,77 @@ button:focus {
   display: flex;
   gap: 16px;
 }
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(80, 68, 68, 0.5);
+  position: fixed;
+  top: 0;
+}
+
+.modal {
+  position: absolute;
+  border-radius: 4px;
+  width: 408px;
+  min-height: 584px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  background-color: #e7e9fc;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 24px;
+}
+.close-btn {
+  position: absolute;
+  border-radius: 4px;
+  width: 24px;
+  height: 24px;
+  top: 24px;
+  right: 24px;
+}
+.modal-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--navy-blue);
+  margin-top: 72px;
+}
+
+.modal-form {
+  width: 360px;
+  height: 58px;
+  border: none;
+}
+.modal-data {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+  color: var(--light-slate);
+  margin-top: 16px;
+  margin-bottom: 4px;
+}
+.modal-input {
+  border: 1px solid #404bbf;
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  background-color: #31d0aa;
+}
+.send-btn {
+  position: absolute;
+  border-radius: 4px;
+  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background: var(--iris);
+  margin-top: 50px;
+  margin-left: 100px;
+}
