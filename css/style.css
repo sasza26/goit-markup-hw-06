@@ -511,6 +511,70 @@ button:focus {
   display: flex;
   gap: 16px;
 }
+/* subscribe */
+.subscribe {
+  margin-left: 80px;
+}
+.sub-text {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02;
+  color: #ffffff;
+}
+
+.sub-form {
+  display: flex;
+}
+
+.sub-label {
+  gap: 24px;
+}
+
+.sub-input {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04;
+  padding-left: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.sub-input::placeholder {
+  color: #ffffff;
+}
+
+.sub-btn {
+  min-width: 165px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 24px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+}
+
+.sub-btn-icon {
+  margin-left: 16px;
+  fill: #ffffff;
+}
+
+/* modal window */
 
 .backdrop {
   width: 100%;
@@ -518,9 +582,19 @@ button:focus {
   background-color: rgba(46, 47, 66, 0.4);
   position: fixed;
   top: 0;
+  left: 0;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* opacity: 0;
+    pointer-events: none;
+    visibility: hidden; */
 }
+
+/* .is-open{
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible; 
+}*/
 
 .modal {
   position: absolute;
@@ -530,13 +604,13 @@ button:focus {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background-color: #fcfcfc;
-
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 72px 24px 24px 24px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .close-btn {
   display: flex;
   align-items: center;
@@ -567,6 +641,7 @@ button:focus {
 .close-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal-title {
   font-weight: 500;
   font-size: 16px;
@@ -582,22 +657,26 @@ button:focus {
   height: 58px;
   border: none;
 }
+
 .modal-data-input {
   margin-bottom: 8px;
 }
+
 .modal-data {
   display: block;
   font-weight: 400;
   font-size: 12px;
-  line-height: 117%;
+  line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--light-slate);
-  margin-top: 16px;
+  color: #8e8f99;
+
   margin-bottom: 4px;
 }
+
 .modal-input-icon {
   position: relative;
 }
+
 .modal-input {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
@@ -609,9 +688,12 @@ button:focus {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:hover,
 .modal-input:focus {
   border-color: #4d5ae5;
+}
+
+.modal-input:focus + .modal-icon {
+  fill: #4d5ae5;
 }
 
 .modal-icon {
@@ -623,16 +705,9 @@ button:focus {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-icon:hover,
-.modal-icon:focus {
-  fill: #4d5ae5;
-}
-.modal-comment {
+.modal-data-input {
   margin-bottom: 16px;
 }
-/* .moddal-data-comment{
-
-} */
 
 .input-comment {
   width: 100%;
@@ -650,18 +725,59 @@ button:focus {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-comment:hover,
 .input-comment:focus {
   border-color: #4d5ae5;
 }
+
+.modal-check-box {
+  margin-bottom: 24px;
+}
+
+.user-privacy {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+}
+
+.privacy-icon {
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47 66g0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+.privacy-icon:checked {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+
+.privacy-link {
+  color: #4d5ae5;
+}
+
 .send-btn {
-  position: absolute;
+  display: block;
   border-radius: 4px;
-  padding: 16px 32px;
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background: var(--iris);
-  margin-top: 50px;
-  margin-left: 25%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #4d5ae5;
+  border: none;
 }
