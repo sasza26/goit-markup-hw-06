@@ -671,7 +671,7 @@ button:focus {
 }
 
 .modal-data-input {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .modal-data {
@@ -767,7 +767,7 @@ button:focus {
   margin-right: 8px;
 }
 
-.abc:checked + .privacy-icon {
+.abc .visually-hidden:checked + .privacy-icon {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
