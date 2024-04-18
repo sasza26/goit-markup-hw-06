@@ -749,14 +749,14 @@ button:focus {
   margin-bottom: 24px;
 }
 
-.user-privacy {
+.check-text {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
 
-.privacy-icon {
+.span-checkbox-text {
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -771,7 +771,8 @@ button:focus {
   margin-right: 8px;
 }
 
-.abc .visually-hidden:checked + .privacy-icon {
+.modal-check:checked+
+.check-text .span-checkbox-text {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
