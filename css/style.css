@@ -721,6 +721,10 @@ button:focus {
   margin-bottom: 8px;
 }
 
+.modal-comment-input{
+  margin-bottom: 16px;
+}
+
 .input-comment {
   width: 100%;
   height: 120px;
