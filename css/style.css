@@ -568,7 +568,7 @@ button:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 24px;
+
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -721,7 +721,7 @@ button:focus {
   margin-bottom: 8px;
 }
 
-.modal-comment-input{
+.modal-comment-input {
   margin-bottom: 16px;
 }
 
@@ -739,6 +739,8 @@ button:focus {
   outline: transparent;
   resize: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  color: #2e2f42;
 }
 
 .input-comment:focus {
@@ -771,8 +773,7 @@ button:focus {
   margin-right: 8px;
 }
 
-.modal-check:checked+
-.check-text .span-checkbox-text {
+.modal-check:checked + .check-text .span-checkbox-text {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
