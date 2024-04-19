@@ -687,6 +687,7 @@ button:focus {
 
 .modal-input-icon {
   position: relative;
+  
 }
 
 .modal-input {
@@ -709,12 +710,13 @@ button:focus {
 }
 
 .modal-icon {
-  fill: #31d0aa;
+  fill:#2e2f42;
   position: absolute;
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .modal-data-input {
