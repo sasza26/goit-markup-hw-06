@@ -179,6 +179,64 @@ address :focus {
   color: #404bbf;
 }
 
+/* mobile-menu */
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  opacity: o;
+  pointer-events: none;
+  visibility: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.mob-close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  line-height: 0;
+  padding: 0;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.mob-close-btn:hover,
+.mob-close-btn:focus {
+  border: none;
+  background-color: #404bbf;
+  fill: #ffffff;
+}
+
+.mob-menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 72px;
+  gap: 40px;
+  flex-grow: 1;
+}
+
+.mob-menu-link .current {
+  color: #404bbf;
+}
+
+.mob-menu-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+
 .header {
   background-color: #2e2f42;
   padding: 72px 0;
@@ -925,7 +983,7 @@ button:focus {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
   .head-container {
     display: flex;
