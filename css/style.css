@@ -34,9 +34,11 @@ img {
 ul {
   list-style: none;
 }
+.section {
+  margin: 0 auto;
+}
 
 .container {
-  /* width: 1158px; */
   max-width: 320px;
   margin: 0 auto;
   padding-left: 16px;
@@ -50,17 +52,17 @@ ul {
 }
 
 .hed-container {
-  /* display: flex;
+  display: flex;
   width: 100%;
-  align-items: center; */
-  padding-top: 15px;
-  padding-bottom: 15px;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .logo-link {
   display: flex;
-  /* align-items: center;
-  margin-right: auto; */
+  align-items: center;
+  margin-right: auto;
   justify-content: space-between;
 }
 
@@ -99,11 +101,11 @@ nav :focus {
 }
 
 .link-item {
-  /* display: flex; */
+  display: none;
+  /* display: flex; 
   gap: 40px;
 
-  align-items: center;
-  display: none;
+  align-items: center; */
 }
 
 .link {
@@ -158,10 +160,11 @@ nav :focus {
   border-radius: 2px;
 }
 .our-contacts {
-  /* display: flex; */
-  display: none;
+  display: flex;
+
   gap: 40px;
   font-style: normal;
+  display: none;
 }
 
 .contacts {
@@ -259,7 +262,7 @@ address :focus {
   /* font-size: 56px; */
   font-size: 36px;
   font-weight: 700;
-  line-height: 1.07;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
@@ -347,7 +350,7 @@ button:focus {
   font-weight: 700;
   /* font-size: 20px; */
   /* font-weight: 500; */
-  line-height: 1.2;
+  line-height: 1.1;
   letter-spacing: 0.02em;
 
   margin-bottom: 8px;
@@ -372,6 +375,7 @@ button:focus {
 }
 
 .title-section {
+  margin-top: 96px;
   margin-bottom: 72px;
   font-weight: 700;
   font-size: 36px;
@@ -394,7 +398,7 @@ button:focus {
   border-radius: 0px 0px 4px 4px;
 
   /* width: calc((100% - 72px) / 4); */
-  width: 100%;
+  width: 264px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   /* margin-bottom: 72px;
@@ -402,7 +406,7 @@ button:focus {
 }
 
 .name-prof {
-  padding: 32px 0;
+  padding: 32px 16px;
 }
 
 .team-name {
@@ -411,7 +415,7 @@ button:focus {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  margin-bottom: 8px;
+  margin-top: 0;
   text-align: center;
 }
 
@@ -421,7 +425,7 @@ button:focus {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 8px;
+  margin: 8px auto;
   text-align: center;
 }
 
@@ -541,7 +545,7 @@ button:focus {
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
-  padding: 32px 16px;
+
   border: 1px solid #e7e9fc;
   border-top: none;
 
@@ -551,17 +555,21 @@ button:focus {
 .portfolio-title {
   font-weight: 500;
   font-size: 20px;
-  line-height: 120%;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-top: 32px;
+  margin-left: 16px;
 }
 
 .text {
   text-align: left;
   margin-top: 8px;
+  margin-left: 16px;
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
@@ -980,45 +988,168 @@ button:focus {
   border: none;
   margin: auto;
 }
+/* -----styles tab------- */
 
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
+
+  .mob-close-btn {
+    display: none;
+  }
+
   .head-container {
     display: flex;
+    align-items: center;
+    padding: 0 16px;
+
+    width: 100%;
   }
+
+  .web {
+    margin-right: 120px;
+  }
+
   .logo-link {
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: auto;
   }
+
   .link-item {
     display: flex;
+    gap: 40px;
   }
+  .link-item .link {
+    text-decoration: none;
+    font-weight: 500;
+    color: #2e2f42;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 24px 0;
+  }
+
   .header {
     max-width: 768px;
-  }
-  .header-title {
-    max-width: 496px;
-    margin: 0 auto 48px;
-  }
-  .our-contacts {
-    display: flex;
+    background-color: #2e2f42;
+    padding: 112px 0;
+
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
   }
 
-  .section-two {
-    padding: 120px 0;
-  }
-  .section-box-content {
-    display: flex;
-  }
-  .section-box {
-    width: calc((100% - 72px) / 4);
-  }
-  .icon {
-    display: flex;
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .main-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/.jpg);
+    }
+
+    .header-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 36px;
+    }
+    .header-title {
+      max-width: 496px;
+      font-size: 56px;
+    }
+    .our-contacts {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 0;
+      list-style-type: none;
+      font-style: normal;
+      flex-direction: column;
+    }
+    .our-contacts .contacts {
+      color: #434455;
+      font-size: 12px;
+      line-height: 1.17;
+      letter-spacing: 0.04em;
+      display: block;
+
+      padding: 0;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .section-two {
+      padding: 120px 0;
+    }
+    .section-box-content {
+      display: flex;
+      flex-direction: row;
+      gap: 72px 42px;
+      flex-wrap: wrap;
+    }
+    .section-box {
+      width: calc((100% - 24px) / 2);
+    }
+    .section-name {
+      text-align: start;
+    }
+    .list-img {
+      flex-direction: row;
+      gap: 72px 24px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .images-team {
+      width: calc((100% - 24px) / 2);
+    }
+    .portfolio-box {
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: calc((100% - 24px) / 2);
+    }
+    .footer-container {
+      align-items: flex-start;
+      gap: 16px;
+    }
+    .footer-text {
+      max-width: 264px;
+    }
+    .footer-content {
+      display: flex;
+      gap: 72px 24px;
+      flex-wrap: wrap;
+      margin-left: 92px;
+    }
+    .footer-social {
+      margin-bottom: o;
+    }
+    .sub-form {
+      flex-direction: row;
+      gap: 24px;
+    }
+    .sub-text {
+      text-align: start;
+    }
+    .subscribe {
+      margin-left: 0;
+    }
+    .modal {
+      width: 408px;
+      min-height: 584px;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
   }
 }
-
+/*------ styles-desk ------*/
 @media screen and (min-width: 1158px) {
   .container {
     width: 1158px;
@@ -1036,6 +1167,14 @@ button:focus {
     display: flex;
   }
   .header {
+    background-color: #2e2f42;
+    padding: 72px 0;
+    display: flex;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
     max-width: 1440px;
   }
   .header-title {
@@ -1053,5 +1192,8 @@ button:focus {
   }
   .icon {
     display: flex;
+  }
+  .portfolio-box {
+    width: calc((100% - 48px) / 3);
   }
 }
