@@ -40,7 +40,8 @@ ul {
 
 .container {
   max-width: 320px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 16px;
   padding-right: 16px;
 }
@@ -253,29 +254,28 @@ address :focus {
   background-color: #2e2f42;
   padding: 72px 0;
   display: flex;
+  max-width: 320px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/dark-bg-1.jpg);
+    url("../images/dark-bg-1.jpg");
 }
 
-@media screen and (-webkit-min-device-pixel-ratio: 2),
+@media (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .main-section {
+  .header {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/dark-bg-2.jpg);
-
-    max-width: 320px;
-
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin: 0 auto;
+      url("../images/dark-bg-2.jpg");
   }
 }
 .heder-title {
@@ -1003,7 +1003,6 @@ button:focus {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    margin: 0;
   }
 
   .mob-menu-btn {
@@ -1054,7 +1053,7 @@ button:focus {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office-1.jpg);
+      url("../images/people-office-1.jpg");
   }
 
   @media screen and (-webkit-min-device-pixel-ratio: 2),
@@ -1065,7 +1064,7 @@ button:focus {
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/people-office-2.jpg);
+        url("../images/people-office-2.jpg");
     }
   }
   .header-container {
@@ -1252,25 +1251,27 @@ button:focus {
   .header {
     background-color: #2e2f42;
     padding: 188px 0;
-    display: flex;
+    max-width: 1440px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office-desk1x.jpg);
+      url("../images/people-office-desk1x.jpg");
   }
 
-  @media screen and (-webkit-min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .main-section {
+    .header {
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/people-office-desk2x.jpg);
-      min-width: 1440px;
-      margin: auto;
+        url("../images/people-office-desk2x.jpg");
     }
   }
   .header-container {
